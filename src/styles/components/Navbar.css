@@ -1,0 +1,18 @@
+.navbar-container{
+    width: 70%;
+}
+
+.navbar-buttons-container{
+    justify-content: center;
+}
+
+.navbar-ru{
+    border: solid 1px rgb(238, 238, 238);
+}
+
+
+@media (max-width: 900px) {
+    .navbar-container{
+        width: 100% !important;
+    }
+}
