@@ -26,7 +26,7 @@
   display: flex;
   align-self: center;
   width: 60%;
-  margin: 100px auto auto auto;
+  margin: 100px auto auto auto !important;
   height: 500px;
 }
 .b-intro{
@@ -45,7 +45,7 @@
 }
 
 .b-socials-container{
-    margin-top: 18px;
+    margin-top: 18px !important;
 }
 .b-socials-text{
     color: #333333;
@@ -53,7 +53,7 @@
 }
 .b-socials-links{
     display: flex;
-    margin-top: 10px;
+    margin-top: 10px !important; 
     justify-content: flex-start;
     gap: 10px;
 }
@@ -80,14 +80,14 @@
   z-index: -1;
   position: absolute;
   filter: blur(6px);
-  border-radius: 90%;
+  border-radius: 90% !important;
 }
 
 
 /* CSS for banner button */
 .b-button {
     --btn-default-bg: #407C86;
-    --btn-padding: 15px 20px;
+    --btn-padding: 15px 20px !important;
     --btn-hover-bg: #407C86;
     --btn-transition: .3s;
     --btn-letter-spacing: .1rem;
@@ -106,8 +106,8 @@
   
   .b-button {
     box-sizing: border-box;
-    border-radius: 10px;
-    padding: var(--btn-padding);
+    border-radius: 10px !important;
+    padding: var(--btn-padding) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +119,7 @@
     transition: var(--btn-transition);
     overflow: hidden;
     box-shadow: var(--btn-shadow);
-    margin-top: 18px;
+    margin-top: 18px !important;
   }
   
   .b-button span {
@@ -261,10 +261,11 @@
     .b-sub-container{
       width: 70% !important;
       margin: auto;
-      margin-top: 100px;
+      margin-top: 100px !important;
       justify-content: center;
       align-items: center;
       text-align: center;
+      z-index: 10;
     }
     .b-socials-links{
       justify-content: center;
