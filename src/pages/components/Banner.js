@@ -17,7 +17,7 @@ function Banner() {
         <div className="b-container">
             <div className="b-sub-container">
                 <Typography className='b-intro'>
-                    Hi, I'm Simon, a freelance
+                    Hi, I&apos;m Simon, a freelance
                 </Typography>
                 <Typography className='b-title' variant='h1' >
                     Full Stack developer & UI/UX <br/> designer
