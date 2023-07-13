@@ -29,12 +29,12 @@
   height: 500px;
 }
 .b-intro{
-    font-size: 20px;
+    font-size: 20px !important;
     letter-spacing: calc(20px*0.012);
 }
 .b-title{
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 48px !important;
+    font-weight: 600 !important;
     line-height: calc(48px*1.2);
     letter-spacing: calc(48px*0.012);
 }
@@ -72,10 +72,10 @@
     --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
     --hover-btn-color: #f9f9f9;
     --default-btn-color: #fff;
-    --font-size: 16px;
+    --font-size: 16px !important;
     /* 👆 this field should not be empty */
-    --font-weight: 400;
-    --font-family:Raleway;
+    --font-weight: 400 !important;
+    --font-family:Raleway !important;
 
   }
   
@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: center;
     color: var(--default-btn-color);
-    font: var(--font-weight) var(--font-size) var(--font-family);
+    font: var(--font-weight) var(--font-size) var(--font-family) !important;
     background: var(--btn-default-bg);
     border: none;
     cursor: pointer;
@@ -114,7 +114,7 @@
   }
   
   .b-button:hover, .b-button:focus {
-    background: var(--btn-hover-bg);
+    background: var(--btn-hover-bg) !important;
   }
   
   .b-button:hover span, .b-button:focus span {
