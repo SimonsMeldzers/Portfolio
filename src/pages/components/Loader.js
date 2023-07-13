@@ -1,6 +1,6 @@
 import { Html, useProgress } from '@react-three/drei';
 
-function Loader() {
+const CanvasLoader = () => {
   const { progress } = useProgress();
 
   return (
@@ -13,4 +13,4 @@ function Loader() {
   )
 }
 
-export default Loader;
+export default CanvasLoader;
