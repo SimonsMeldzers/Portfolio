@@ -1,4 +1,6 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 import Navbar from '@/pages/components/Navbar'
 
@@ -23,15 +25,23 @@ const theme = createTheme({
   typography: {
     fontFamily: `"Raleway"`,
     fontWeightRegular: 400,
-    fontSize: 16,
+    fontSize: '16px',
   },
 });
 
 export default function Home() {
+  const { t } = useTranslation()
+
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
-      <h1>Hi</h1>
+      <h1>{t("hi")}</h1>
     </ThemeProvider>
   )
 }
+
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+      ...(await serverSideTranslations(locale, ['common']))
+  }
+});
