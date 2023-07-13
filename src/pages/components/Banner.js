@@ -46,6 +46,7 @@ function Banner() {
             </div>         
             <div className='b-3d-container'>
                 <LaptopCanvas/>
+                <span className='b-shadow'></span>
             </div>
 
         </div>

@@ -60,6 +60,8 @@ export default function LaptopCanvas() {
         >
             <Suspense fallback={"Loading..."}>
                 <OrbitControls 
+                    autoRotate
+                    autoRotateSpeed={0.3}
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2.3}
                     minPolarAngle={Math.PI / 2.3}
