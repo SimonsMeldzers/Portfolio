@@ -123,7 +123,7 @@ function ResponsiveAppBar() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 color='inherit'
-                sx={{ my: 2, display: 'block', fontSize: '16px' }}
+                sx={{ my: 2, display: 'block', fontSize: 16 }}
               >
                 {page}
               </Button>

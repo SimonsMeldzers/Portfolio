@@ -26,7 +26,6 @@ const theme = createTheme({
   typography: {
     fontFamily: `"Raleway"`,
     fontWeightRegular: 400,
-    fontSize: '16px',
   },
 });
 

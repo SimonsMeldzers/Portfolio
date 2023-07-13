@@ -10,6 +10,7 @@ import Waves from '@/img/waves.svg';
 import Link from 'next/link';
 
 import LaptopCanvas from './canvas/Laptop';
+import ParticlesCanvas from './canvas/Particles';
 
 function Banner() {
   return (
@@ -20,12 +21,11 @@ function Banner() {
                     Hi, I&apos;m Simon, a freelance
                 </Typography>
                 <Typography className='b-title' variant='h1' >
-                    Full Stack developer & UI/UX <br/> designer
+                    Full Stack developer & UI/UX designer
                 </Typography>
                 <Button className='b-button' variant='contained'> <span> Get in touch </span> <EastIcon sx={{ml: 1}}/> </Button>
                 
                 <div className='b-socials-container'>
-                    <Typography className='b-socials-text'> Reach out on my socials. </Typography>
                     <div className="b-socials-links">
                         <Link href='https://www.linkedin.com/in/simons-meldzers-230158283/'>
                             <Image
@@ -44,10 +44,12 @@ function Banner() {
                     </div>
                 </div>
             </div>         
-                <div className='b-3d-container'>
-                    <LaptopCanvas />
-                </div>
+            <div className='b-3d-container'>
+                <LaptopCanvas/>
+            </div>
+
         </div>
+        <ParticlesCanvas />
     </div>
   )
 }

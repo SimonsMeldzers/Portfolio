@@ -2,15 +2,16 @@
     width: 100%;
     height: 600px;
     display: flex;
-    background-color: aliceblue;
+    /* background: linear-gradient(360deg, #407b860e 0%, #F9F9F9 100%); */
+    position: relative;
 }
-
 
 .b-container{
     display: flex;
     flex-direction: row;
     width: 67%;
     margin: auto;
+
 }
 
 .b-sub-container{
@@ -37,13 +38,18 @@
     font-weight: 600 !important;
     line-height: calc(48px*1.2);
     letter-spacing: calc(48px*0.012);
+    background: linear-gradient(167deg, #333 0%, #407C86 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .b-socials-container{
-    margin-top: 50px;
+    margin-top: 18px;
 }
 .b-socials-text{
     color: #333333;
+    font-weight: 400;
 }
 .b-socials-links{
     display: flex;
@@ -60,6 +66,10 @@
     transition: ease-in-out 0.25s;
 }
 
+.b-3d-background{
+  position: absolute !important;
+  z-index: -100;
+}
 /* CSS for banner button */
 .b-button {
     --btn-default-bg: #407C86;
@@ -221,56 +231,44 @@
   }
 
 
-  /* Css for waves */
-  /* .b-svg-container{
-    width: 100%;
-    position:absolute;
-    bottom: 0px;
-    z-index: -1;
-  } */
-  /* .editorial{
-    display: block;
-    width: 100%;
-    height: 21em;
-    max-height: 100vh;
-    margin: 0;
+  @media (max-width: 1350px) {
+    .banner{
+      height: auto !important;
+    }
+    .b-container{
+      flex-wrap: wrap;
+      width: 90% !important;
+    }
+    .b-3d-container{
+      width: 100%;
+      margin: auto !important;
+      z-index: 1;
+    }
+    .b-sub-container{
+      width: 70% !important;
+      margin: auto;
+      margin-top: 100px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .b-socials-links{
+      justify-content: center;
+    }
+    .b-socials-container{
+      margin-top: 18px !important;
+      margin-bottom: -70px !important;
+      z-index: 2;
+    }
   }
-  .parallax > use{
-    animation: move-forever 36s linear infinite;
-  }
-  .parallax > use:nth-child(0){
-    animation-delay: -2s;
-  }
-  .parallax > use:nth-child(1){
-    animation-delay: -2s;
-    animation-duration: 36s;
-  }
-  .parallax > use:nth-child(2){
-    animation-delay: -20s;
-    animation-duration: 30s;
-  }
-  .parallax > use:nth-child(3){
-    animation-delay: -5s;
-    animation-duration: 22s;
-  }
-  .parallax > use:nth-child(4){
-    animation-delay: -16s;
-    animation-duration: 20s;
-  }
-  .parallax > use:nth-child(5){
-    animation-delay: -7s;
-    animation-duration: 18s;
-  }
-  .parallax > use:nth-child(6){
-    animation-delay: -8s;
-    animation-duration: 15s;
+  @media (max-width: 950px) {
+    .b-sub-container{
+      width: 90% !important;
+    }
   }
 
-  @keyframes move-forever{
-    0%{
-        transform: translate(-90px, 0%);
+  @media (max-width: 510px) {
+    .b-socials-container{
+      margin-bottom: -150px !important;
     }
-    100%{
-        transform: translate(85px, 0%);
-    }
-  } */
+  }
