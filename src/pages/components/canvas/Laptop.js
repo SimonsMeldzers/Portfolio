@@ -61,7 +61,8 @@ export default function LaptopCanvas() {
             gl={{ preserveDrawingBuffer: true }}
             className='b-3d-canvas'
         >
-            <Suspense fallback={<CanvasLoader />}>
+            <Suspense fallback={null}>
+                <CanvasLoader />
                 <OrbitControls 
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2.3}

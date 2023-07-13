@@ -29,7 +29,8 @@ export default function ParticlesCanvas() {
             camera={{ position : [10, 1, 2], fov: 100}}
             gl={{ preserveDrawingBuffer: true }}
         >
-            <Suspense fallback={<CanvasLoader />}>
+            <Suspense fallback={null}>
+                <CanvasLoader />
                 <OrbitControls 
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2.3}
