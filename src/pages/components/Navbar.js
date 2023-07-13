@@ -7,18 +7,15 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import LanguageIcon from '@mui/icons-material/Language';
 import Image from 'next/image';
 
 const pages = ['About', 'Projects', 'Contacts'];
-const languages = ['en', 'lv', 'ru'];
 
 import Logo from '@/img/s.png'
-import Globe from '@/img/globe.png'
+import Globe from '@/img/icons/globe.png'
 import ENG from '@/img/flag/lang_eng.png'
 import LV from '@/img/flag/lang_lv.png'
 import RU from '@/img/flag/lang_ru.png'
@@ -44,7 +41,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar color='info' position="static" elevation={1}>
+    <AppBar color='info' position="fixed" elevation={0}>
       <Container maxWidth="xl" className='navbar-container'>
         <Toolbar disableGutters>
           <Typography

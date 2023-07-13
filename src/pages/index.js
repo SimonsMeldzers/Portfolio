@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 
 import Navbar from '@/pages/components/Navbar'
+import Banner from "./components/Banner";
 
 
 const theme = createTheme({
@@ -35,7 +36,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
-      <h1>{t("hi")}</h1>
+      <Banner/>
     </ThemeProvider>
   )
 }
