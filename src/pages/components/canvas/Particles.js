@@ -3,7 +3,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
-import CanvasLoader from '../Loader';
+// import CanvasLoader from '../Loader';
 // import CanvasLoader from '../Loader';
 
 const Particles = () => {
@@ -29,8 +29,7 @@ export default function ParticlesCanvas() {
             camera={{ position : [10, 1, 2], fov: 100}}
             gl={{ preserveDrawingBuffer: true }}
         >
-            <Suspense fallback={null}>
-                <CanvasLoader />
+            <Suspense fallback={"Loading..."}>
                 <OrbitControls 
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2.3}

@@ -3,7 +3,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
-import CanvasLoader from '../Loader';
+// import CanvasLoader from '../Loader';
 // import CanvasLoader from '../Loader';
 
 const Laptop = ({isMobile}) => {
@@ -61,8 +61,7 @@ export default function LaptopCanvas() {
             gl={{ preserveDrawingBuffer: true }}
             className='b-3d-canvas'
         >
-            <Suspense fallback={null}>
-                <CanvasLoader />
+            <Suspense fallback={"Loading..."}>
                 <OrbitControls 
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2.3}
