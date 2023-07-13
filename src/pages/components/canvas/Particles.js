@@ -3,9 +3,6 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
-// import CanvasLoader from '../Loader';
-// import CanvasLoader from '../Loader';
-
 const Particles = () => {
 const particles = useLoader(GLTFLoader, "/particles/scene.gltf");
   

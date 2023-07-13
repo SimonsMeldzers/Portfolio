@@ -1,10 +1,7 @@
 import {Suspense, useEffect, useState} from 'react';
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Canvas, useLoader } from '@react-three/fiber';
-import { OrbitControls, Preload } from '@react-three/drei';
-
-// import CanvasLoader from '../Loader';
-// import CanvasLoader from '../Loader';
+import { OrbitControls, Preload } from '@react-three/drei'; 
 
 const Laptop = ({isMobile}) => {
 const laptop = useLoader(GLTFLoader, "/laptop/scene.gltf");
