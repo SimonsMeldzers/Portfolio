@@ -21,7 +21,7 @@ function Banner() {
                 <Typography className='b-title' variant='h1' >
                     Full Stack developer & UI/UX designer
                 </Typography>
-                <Button className='b-button' variant='contained'> <span> Get in touch </span> <EastIcon sx={{ml: 1}}/> </Button>
+                <Button className='b-button' variant='contained'> <span> Get in touch </span> <EastIcon sx={{ml: 1, color: "#F9F9F9", fontSize: 16}}/> </Button>
                 
                 <div className='b-socials-container'>
                     <div className="b-socials-links">

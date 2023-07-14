@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next';
 
 import Navbar from '@/pages/components/Navbar'
 import Banner from "./components/Banner";
+import About from "./components/About";
 
 
 const theme = createTheme({
@@ -36,6 +37,7 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <Navbar/>
       <Banner/>
+      <About/>
     </ThemeProvider>
   )
 }
