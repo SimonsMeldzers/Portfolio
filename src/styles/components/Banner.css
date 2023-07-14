@@ -254,6 +254,8 @@
     .b-container{
       flex-wrap: wrap;
       width: 90% !important;
+      height: auto !important;
+      overflow-y: hidden !important;
     }
     .b-3d-container{
       width: 100%;
