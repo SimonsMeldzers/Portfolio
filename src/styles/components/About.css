@@ -61,7 +61,7 @@
 @media (max-width: 808px) {
     .a-container{
         flex-wrap:wrap-reverse !important;
-        z-index: -1;
+        margin-top: 50px !important;
     }
     .a-blob-container{
         width: 100% !important;
@@ -72,9 +72,13 @@
         width: 100% !important;
         position: relative;
         padding-top: 200px !important;
+        z-index: -1 !important;
     }
     .a-blob{
         height: 80% !important;
+    }
+    .a-text, .a-sub-title, .a-title{
+        z-index: 2 !important;
     }
 }
 
