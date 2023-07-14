@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
 import { Typography } from '@mui/material';
-import React from 'react';
 
 function About() {
+    const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="about">
         <div className="a-container">
@@ -24,7 +26,10 @@ function About() {
                 </svg>
             </div>
             <div className="a-text-container">
-                <Typography className="a-sub-title" component='a' href="#about"> About me </Typography>
+                <Typography onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="a-sub-title" component='a' href="#about">
+                     About me
+                     <span style={isHovered ? {display: "flex", marginLeft: "5px"} : {display: "none"}}>#</span>
+                </Typography>
                 <Typography className='a-title' variant='h3' component='h2'> Web development </Typography>
                 <Typography className='a-text'> 
                     I’m a full time CS student at Riga Technical University 
