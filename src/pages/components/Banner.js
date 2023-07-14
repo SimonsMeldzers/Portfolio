@@ -6,11 +6,9 @@ import Image from 'next/image';
 
 import LinkedIn from '@/img/icons/linkedin-dark.png';
 import GitHub from '@/img/icons/github-dark.png';
-import Waves from '@/img/waves.svg';
 import Link from 'next/link';
 
 import LaptopCanvas from './canvas/Laptop';
-import ParticlesCanvas from './canvas/Particles';
 
 function Banner() {
   return (
@@ -45,12 +43,11 @@ function Banner() {
                 </div>
             </div>         
             <div className='b-3d-container'>
-                <LaptopCanvas/>
                 <span className='b-shadow'></span>
+                <LaptopCanvas/>
             </div>
 
         </div>
-        <ParticlesCanvas />
     </div>
   )
 }

@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 const pages = ['About', 'Projects', 'Contacts'];
 
-import Logo from '@/img/s.png'
+import Logo from '@/img/s.webp'
 import Globe from '@/img/icons/globe.png'
 import ENG from '@/img/flag/lang_eng.png'
 import LV from '@/img/flag/lang_lv.png'
