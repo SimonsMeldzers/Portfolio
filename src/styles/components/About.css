@@ -27,23 +27,23 @@
 .a-text-container{
     flex-direction: column;
     height: 100%;
-    padding: 20px;
+    padding: 20px !important;
     justify-content: center;
 }
 
 .a-sub-title{
     display: flex;
     color: #407C86;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 20px !important;
+    font-weight: 600 !important;
     letter-spacing: calc(20px * 0.012);
     width: fit-content;
 }
 
 .a-title{
-    font-size: 36px;
-    font-weight: 600;
-    margin: 2px 0px 7px 0px;
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    margin: 2px 0px 7px 0px !important;
     letter-spacing: calc(36px * 0.012);
 }
 
