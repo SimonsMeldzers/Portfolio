@@ -16,6 +16,7 @@ body {
 body {
   color: #333333;
   background-color: #F9F9F9;
+  padding: 0px !important;
 }
 
 a {
