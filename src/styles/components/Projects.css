@@ -9,6 +9,7 @@
     flex-direction: column;
     width: 67%;
     margin: auto;
+    overflow-y: hidden !important;
 }
 
 .p-item{
@@ -20,6 +21,8 @@
     margin: auto;
     height: 600px;
     position: relative;
+    overflow-y: hidden !important;
+
 }
 
 .p-title{
