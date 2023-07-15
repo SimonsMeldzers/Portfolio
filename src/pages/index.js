@@ -6,6 +6,7 @@ import Navbar from '@/pages/components/Navbar'
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
 
 
 const theme = createTheme({
@@ -40,6 +41,7 @@ export default function Home() {
       <Banner/>
       <About/>
       <Projects/>
+      <Contacts/>
     </ThemeProvider>
   )
 }

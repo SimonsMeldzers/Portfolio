@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import reactLogo from '@/img/skills/react.png'
 import nextLogo from '@/img/skills/nextjs.png'
@@ -122,36 +122,55 @@ export default function Projects() {
 };
 
 
-const ProjectsItem = ({title, text, skills, sites, link}) => {
+const ProjectsItem = ({ title, text, skills, sites, link }) => {
     const [isHovered, setIsHovered] = useState(false);
-    return(
-        <div className="p-item">
-            <Link target="_blank" className='p-link' href={link}>
-                <Typography onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className='p-title' variant='h3' component='h2'>
-                { isHovered ? <Image src={linkIcon} className='p-link-icon'/> : null }
-                    {title}
-                </Typography>
-            </Link>
-            <Typography> 
-                {text}
-            </Typography>
-            <div className="p-skills">
-                {skills.map((img, index) => {
-                    return <Image className='p-skill' src={img} alt={index} key={index}/>
-                })}
-            </div>
-            <div className="p-collage">
-                <div className="p-collage-container">
-
-                    <Image href='/' src={sites[2]} className="project-xl" alt="erker-xl"/>
-                    <Image href='/' src={sites[1]} className="project-md" alt="erker-md"/>
-                    <Image href='/' src={sites[0]} className="project-sm" alt="erker-sm"/>
-
-                    <span className="p-cicrcle-1"></span>
-                    <span className="p-cicrcle-2"></span>
-
-                </div>
-            </div>
+    const [windowWidth, setWindowWidth] = useState(null);
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      handleResize();
+  
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
+    return (
+      <div className="p-item">
+        <Link target="_blank" className="p-link" href={link}>
+          <Typography
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            className="p-title"
+            variant="h3"
+            component="h2"
+          >
+            {windowWidth && windowWidth <= 900 && (
+              <Image src={linkIcon} className="p-link-icon" alt="Link Icon" />
+            )}
+            { isHovered ? <Image src={linkIcon} className='p-link-icon'/> : null }
+            {title}
+          </Typography>
+        </Link>
+        <Typography>{text}</Typography>
+        <div className="p-skills">
+          {skills.map((img, index) => {
+            return <Image className="p-skill" src={img} alt={index} key={index} />;
+          })}
         </div>
-    )
-}
+        <div className="p-collage">
+          <div className="p-collage-container">
+            <Image href="/" src={sites[2]} className="project-xl" alt="erker-xl" />
+            <Image href="/" src={sites[1]} className="project-md" alt="erker-md" />
+            <Image href="/" src={sites[0]} className="project-sm" alt="erker-sm" />
+            <span className="p-cicrcle-1"></span>
+            <span className="p-cicrcle-2"></span>
+          </div>
+        </div>
+      </div>
+    );
+  };
