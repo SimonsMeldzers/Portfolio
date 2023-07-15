@@ -54,6 +54,61 @@ export default function Projects() {
                     ]
                 }
             />
+            <ProjectsItem 
+                title="Kids’ gift boxes"
+                text="“Soft, clean, and simple” were words that had to be in mind when designing this e-commerce website. The overall esthetic had to be neutral yet bright for a potential client to show interest in buying the products.  "
+                skills={
+                    [
+                        nextLogo,
+                        muiLogo,
+                        sanityLogo,
+                        stripeLogo,
+                    ]
+                }
+                sites={
+                    [
+                        smBabybox,
+                        mdBabybox,
+                        xlBabybox,
+                    ]
+                }
+            />
+            <ProjectsItem 
+                title="Custom wooden houses"
+                text="Client wanted a very simple, multilingual, informative website. Although the project ended up being rushed, the final product delivered an easy to navigate webpage, with a unique design for the industry."
+                skills={
+                    [
+                        nextLogo,
+                        muiLogo,
+                        i18nLogo,
+                    ]
+                }
+                sites={
+                    [
+                        smInin,
+                        mdInin,
+                        xlInin,
+                    ]
+                }
+            />
+            <ProjectsItem 
+                title="A car rental and repair shop"
+                text="A platforms that allows it’s users to explore the variety of services this company provides, as well as reserve a specific rental. Meanwhile from the admin’s perspective, website allows to add, edit, delete cars, manage reserved cars, and much more."
+                skills={
+                    [
+                        reactLogo,
+                        bootstrapLogo,
+                        fbLogo,
+                    ]
+                }
+                sites={
+                    [
+                        smIvona,
+                        mdIvona,
+                        xlIvona,
+                    ]
+                }
+            />
         </div>
     </div>
   )
