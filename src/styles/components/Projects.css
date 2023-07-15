@@ -67,14 +67,17 @@
 
 .project-xl{
     top: 0px;
+    z-index: 2;
 }
 .project-md{
     top: 130px;
     right: 10px;
+    z-index: 2;
 }
 .project-sm{
     top: 160px;
     left: 20px;
+    z-index: 2;
 }
 
 .p-cicrcle-1{
@@ -84,7 +87,7 @@
     background-color: #83BABF;
     opacity: 0.5;
     border-radius: 100px;
-    z-index: -1;
+    z-index: 1;
     left: 40px;
     top: 40px;
 }
@@ -95,10 +98,73 @@
     background-color: #83BABF;
     opacity: 0.3;
     border-radius: 100px;
-    z-index: -1;
+    z-index: 1;
     right: 10px;
     top: 70px;
 }
+.p-link{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.p-link-icon{
+    position: absolute;
+    left: -18px;
+}
+
+
+/* Animations */
+
+.p-collage-container:hover .project-xl,
+.p-collage-container:hover .project-md,
+.p-collage-container:hover .project-sm {
+  transition: ease 0.25s;
+  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.p-collage-container:hover .p-cicrcle-1,
+.p-collage-container:hover .p-cicrcle-2 {
+    transition: ease 0.25s;
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.20);
+}
+
+.p-collage-container:not(:hover) .project-xl,
+.p-collage-container:not(:hover) .project-md,
+.p-collage-container:not(:hover) .project-sm {
+  transition: ease 0.25s;
+}
+
+.p-collage-container:not(:hover) .p-cicrcle-1,
+.p-collage-container:not(:hover) .p-cicrcle-2 {
+    transition: ease 0.25s;
+}
+
+/* Example animation styles */
+.p-collage-container:hover .project-xl {
+  translate: 0px -5px;
+}
+
+.p-collage-container:hover .project-md {
+    translate: 5px 5px;
+}
+
+.p-collage-container:hover .project-sm {
+    translate: -5px 5px;
+}
+
+.p-collage-container:hover .p-cicrcle-1 {
+    translate: -5px 5px;
+  }
+  
+.p-collage-container:hover .p-cicrcle-2 {
+    translate: 5px -5px;
+}
+
+
+
 
 @media (max-width: 900px) {
     .p-container{
