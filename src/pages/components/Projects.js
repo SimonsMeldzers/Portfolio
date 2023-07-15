@@ -152,7 +152,7 @@ const ProjectsItem = ({ title, text, skills, sites, link }) => {
             {windowWidth && windowWidth <= 900 && (
               <Image src={linkIcon} className="p-link-icon" alt="Link Icon" />
             )}
-            { isHovered ? <Image src={linkIcon} className='p-link-icon'/> : null }
+            { isHovered ? <Image alt="Link Icon" src={linkIcon} className='p-link-icon'/> : null }
             {title}
           </Typography>
         </Link>

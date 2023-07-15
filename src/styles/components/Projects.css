@@ -178,6 +178,10 @@
         min-width: 0px !important;
         max-width: none !important;
     }
+    .p-link-icon{
+        position: relative !important;
+        left: -5px;
+    }
 }
 
 @media (max-width: 720px) {
