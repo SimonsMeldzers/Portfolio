@@ -31,6 +31,10 @@
     letter-spacing: calc(36px * 0.012);
     margin: 0px 0px 7px 0px;
 }
+.p-text{
+    letter-spacing: calc(16px * 0.012);
+    line-height: calc(16px * 1.5);
+}
 
 .p-skills{
     display: flex;

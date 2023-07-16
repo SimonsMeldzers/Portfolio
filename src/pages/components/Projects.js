@@ -156,7 +156,7 @@ const ProjectsItem = ({ title, text, skills, sites, link }) => {
             {title}
           </Typography>
         </Link>
-        <Typography>{text}</Typography>
+        <Typography className='p-text'>{text}</Typography>
         <div className="p-skills">
           {skills.map((img, index) => {
             return <Image className="p-skill" src={img} alt={index} key={index} />;
