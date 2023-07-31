@@ -35,20 +35,20 @@ function Banner() {
                 
                 <div className='b-socials-container'>
                     <div className="b-socials-links">
-                        <Link href='https://www.linkedin.com/in/simons-meldzers-230158283/'>
+                        <a target="_blank" href='https://www.linkedin.com/in/simons-meldzers-230158283/'>
                             <Image
                             className='b-linkedin'
                                 src={LinkedIn}
                                 alt='LinkedIn'
                             />
-                        </Link>
-                        <Link href='https://github.com/SimonsMeldzers'>
+                        </a>
+                        <a target="_blank" href='https://github.com/SimonsMeldzers'>
                             <Image
                             className='b-github'
                                 src={GitHub}
                                 alt='GitHub'
                             />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>         
