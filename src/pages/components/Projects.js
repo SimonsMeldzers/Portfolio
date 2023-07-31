@@ -34,7 +34,7 @@ import Link from 'next/link';
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id='projects'>
         <div className="p-container">
             <ProjectsItem 
                 title="Realtors’ website"

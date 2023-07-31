@@ -13,7 +13,7 @@ import LaptopCanvas from './canvas/Laptop';
 function Banner() {
 
     const handleClick = () => {
-        const targetElement = document.getElementById('scrollTo');
+        const targetElement = document.getElementById('contacts');
         if (targetElement) {
           targetElement.scrollIntoView({
             behavior: 'smooth',

@@ -5,7 +5,7 @@ function About() {
     const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="about">
+    <div className="about" id='about'>
         <div className="a-container">
             <div className="a-blob-container">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" className='a-blob' height="100%" width="100%" id="blobSvg" transform="rotate(0)" style={{opacity: 1}} filter="blur(0px)">

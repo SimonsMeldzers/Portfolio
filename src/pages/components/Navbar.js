@@ -40,6 +40,23 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const handleScroll = (scrollToId) => {
+    const targetElement = document.getElementById(scrollToId);
+    if (targetElement) {
+      // Get the element's current position relative to the viewport
+      const elementRect = targetElement.getBoundingClientRect();
+  
+      // Calculate the target scroll position, adding 20 pixels to the current top position
+      const targetScrollPosition = window.scrollY + elementRect.top - 80;
+  
+      // Scroll to the adjusted position using scrollBy
+      window.scrollTo({
+        top: targetScrollPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <AppBar color='info' position="fixed" elevation={0}>
       <Container maxWidth="xl" className='navbar-container'>
@@ -93,9 +110,11 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <a key={page} id={page} onClick={() => {handleScroll(page.toLowerCase())}}>
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </a>
               ))}
             </Menu>
           </Box>
@@ -119,14 +138,16 @@ function ResponsiveAppBar() {
           </Typography>
           <Box className="navbar-buttons-container" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                color='inherit'
-                sx={{ my: 2, display: 'block', fontSize: 16 }}
-              >
-                {page}
-              </Button>
+              <a key={page} id={page} onClick={() => {handleScroll(page.toLowerCase())}}>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  color='inherit'
+                  sx={{ my: 2, display: 'block', fontSize: 16 }}
+                >
+                  {page}
+                </Button>
+              </a>
             ))}
           </Box>
 
