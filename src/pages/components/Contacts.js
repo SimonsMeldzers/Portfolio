@@ -23,7 +23,7 @@ function Contacts() {
   };
 
   return (
-    <div className='contacts'>
+    <div className='contacts' id='scrollTo'>
       <div className="c-container">
 
         <div className="c-text-container">

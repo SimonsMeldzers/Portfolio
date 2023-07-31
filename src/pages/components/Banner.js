@@ -11,6 +11,16 @@ import Link from 'next/link';
 import LaptopCanvas from './canvas/Laptop';
 
 function Banner() {
+
+    const handleClick = () => {
+        const targetElement = document.getElementById('scrollTo');
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      };
+
   return (
     <div className='banner'>
         <div className="b-container">
@@ -21,7 +31,7 @@ function Banner() {
                 <Typography className='b-title' variant='h1' >
                     Full Stack developer & UI/UX designer
                 </Typography>
-                <Button className='b-button' variant='contained'> <span> Get in touch </span> <EastIcon sx={{ml: 1, color: "#F9F9F9", fontSize: 16}}/> </Button>
+                <Button onClick={handleClick} className='b-button' variant='contained'> <span> Get in touch </span> <EastIcon sx={{ml: 1, color: "#F9F9F9", fontSize: 16}}/> </Button>
                 
                 <div className='b-socials-container'>
                     <div className="b-socials-links">
