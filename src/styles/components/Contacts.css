@@ -232,6 +232,9 @@ input:-webkit-autofill:active{
         .c-form{
             width: 100% !important;
         }
+        .c-3d{
+            display: none !important;
+        }
    }
 
    @media (max-width: 720px) {

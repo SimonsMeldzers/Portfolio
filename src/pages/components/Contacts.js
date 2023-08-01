@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react'
 import { FormControl, Input, InputLabel, TextField, TextareaAutosize, Typography } from '@mui/material';
 
 import emailjs from '@emailjs/browser';
+import MailCanvas from './canvas/Mail';
 
   
 
@@ -48,7 +49,7 @@ function Contacts() {
             </button>
           </form>
           <div className="c-3d">
-
+            <MailCanvas />
           </div>
         </div>
 
