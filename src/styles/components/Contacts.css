@@ -245,6 +245,9 @@ input:-webkit-autofill:active{
         .c-3d{
             display: none !important;
         }
+        .c-alert{
+            width: 100% !important;
+           }
    }
 
    @media (max-width: 720px) {
