@@ -214,6 +214,13 @@ input:-webkit-autofill:active{
    }
 
 
+   .c-alert{
+    margin-top: 22px !important;
+    width: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   }
+
+
    @media (max-width: 1600px) {
         .c-form-message, .c-form-email{
             width: 100% !important;
