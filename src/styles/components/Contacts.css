@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 200px !important;
+    margin-bottom: 150px !important;
 }
 
 .c-container{
@@ -222,6 +222,9 @@ input:-webkit-autofill:active{
    @media (max-width: 1200px) {
         .c-container{
             width: 90% !important;
+        }
+        .contacts{
+            margin-bottom: 20px !important;
         }
    }
 

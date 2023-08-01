@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 
 const theme = createTheme({
@@ -42,6 +43,7 @@ export default function Home() {
       <About/>
       <Projects/>
       <Contacts/>
+      <Footer/>
     </ThemeProvider>
   )
 }

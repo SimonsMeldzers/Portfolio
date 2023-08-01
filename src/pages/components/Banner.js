@@ -22,7 +22,7 @@ function Banner() {
       };
 
   return (
-    <div className='banner'>
+    <div className='banner' id='banner'>
         <div className="b-container">
             <div className="b-sub-container">
                 <Typography className='b-intro'>
