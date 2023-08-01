@@ -22,6 +22,7 @@ function Contacts() {
   const { t } = useTranslation();
 
   const [showPopUp, setShowPopUp] = useState(false);
+  const [showPopUpError, setShowPopUpError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [fromName, setFromName] = useState("");
   const [message, setMessage] = useState("");
@@ -50,7 +51,36 @@ function Contacts() {
             }
             sx={{ mb: 2 }}
           >
-            Your message has been sent!
+            Your message has been sent! 🎉
+          </Alert>
+        </Fade>
+      </Collapse>
+    );
+  };
+  const PopUpError = () => {
+    const [open, setOpen] = useState(true);
+
+    return (
+      <Collapse in={open}>
+        <Fade in={showPopUpError}>
+          <Alert
+            severity="error"
+            className="c-alert"
+            action={
+              <IconButton
+                aria-label="close"
+                color="inherit"
+                size="small"
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
+                <CloseIcon fontSize="inherit" />
+              </IconButton>
+            }
+            sx={{ mb: 2 }}
+          >
+            Something went wrong! 😕 Please try again later!
           </Alert>
         </Fade>
       </Collapse>
@@ -62,12 +92,11 @@ function Contacts() {
   
     emailjs.sendForm('service_rudh4kl', 'template_2z4jm29', form.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
       .then((result) => {
-        console.log(result.text);
         setShowPopUp(true); // Show the pop-up after successful submission
         setFromName('');    // Clear the form field for from_name
         setMessage('');     // Clear the form field for message
       }, (error) => {
-        console.log(error.text);
+        setShowPopUpError(true);
       });
   };
 
@@ -126,6 +155,7 @@ function Contacts() {
               <span className="button-text">{t("c-button")}</span>
             </button>
             {showPopUp && <PopUp />}
+            {showPopUpError && <PopUpError />}
           </form>
           <div className="c-3d">
             <MailCanvas />
