@@ -53,6 +53,18 @@
     .f-copyright p, .f-designed-by p{
         font-size: 14px !important;
     }
+    .f-container{
+        margin: auto;
+    }
+    .f-copyright, .f-designed-by{
+        width: 40% !important;
+    }
+    .f-to-top{
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        width: 20% !important;
+    }
 }
 @media (max-width: 620px) {
     .f-copyright p, .f-designed-by p{
