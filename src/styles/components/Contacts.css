@@ -29,14 +29,14 @@
     font-size: 36px !important;
     font-weight: 600 !important;
     margin: 0px 0px 7px 0px !important;
-    letter-spacing: calc(36px * 0.012);
+    letter-spacing: calc(36px * 0.012) !important;
 }
 
 .c-text{
     letter-spacing: calc(16px * 0.012);
     line-height: calc(16px * 1.5);
-    width: 80%;
-    margin: auto;
+    width: 80% !important;
+    margin: auto !important;
 }
 
 .c-form-container{
