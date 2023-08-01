@@ -212,6 +212,9 @@
     .p-cicrcle-1{
         left: 0px !important;
     }
+    .p-title{
+        font-size: 28px !important;
+    }
 }
 
 @media (max-width: 450px) {
