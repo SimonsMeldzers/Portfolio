@@ -21,7 +21,13 @@ import LV from '@/img/flag/lang_lv.png'
 import RU from '@/img/flag/lang_ru.png'
 import Link from 'next/link';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+
+
 function ResponsiveAppBar() {
+  const { t } = useTranslation()
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -112,7 +118,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <a key={page} id={page} onClick={() => {handleScroll(page.toLowerCase())}}>
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography textAlign="center">{t(page)}</Typography>
                   </MenuItem>
                 </a>
               ))}
@@ -145,14 +151,14 @@ function ResponsiveAppBar() {
                   color='inherit'
                   sx={{ my: 2, display: 'block', fontSize: 16 }}
                 >
-                  {page}
+                  {t(page)}
                 </Button>
               </a>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Language switch">
+            <Tooltip title={t("n-lang")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Image
                   src={Globe}
@@ -228,4 +234,11 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
+
+export const getServerSideProps = async ({ locale }) => ({
+  props: {
+      ...(await serverSideTranslations(locale, ['common']))
+  }
+});
+
 export default ResponsiveAppBar;

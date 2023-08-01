@@ -1,3 +1,34 @@
 {
-    "hi" : "Sveiki"
-}
+    "About": "Par mani",
+    "Projects": "Projekti",
+    "Contacts": "Kontakti",
+    "n-lang": "Valodas slēdzis",
+
+    "b-intro": "Sveiki, es esmu Simons, pašnodarbināts",
+    "b-title": "Full Stack izstrādātājs & UI/UX dizainers",
+    "b-button": "Sazināties",
+
+    "a-sub-title": "Par mani",
+    "a-title": "Web izstrāde",
+    "a-text": "Esmu pilna laika datorzinātņu students Rīgas Tehniskajā universitātē, kuram patīk web izstrāde un dizains. Gadu gaitā esmu izveidojis tehnoloģiju steku, kas sastāv no - React, NextJ, ThreeJ, HTML, JS, CSS, Firebase, Sanity, MySQL, Stripe, MUI, Bootstrap un citiem. Es veidoju un izstrādāju tīras un lietotājam draudzīgas vietnes, kas nodrošina vienmērīgu lietotāja pieredzi, izmantojot jaunākās tehnoloģijas, lai pārliecinātos, ka jūsu vietne izceļas konkurentu vidū.",
+
+    "p-realtor": "Nekustamo īpašumu vietne",
+    "p-realtor-text": "Šī vietne tika izstrādāta vietējam nekustamo īpašumu uzņēmumam, kas saviem klientiem piedāvā plašu nekustamo īpašumu klāstu. Vietnei bija jābūt modernai, atsaucīgai un ātrai, lai nodrošinātu lielisku lietotāja pieredzi, tādējādi palielinot klienta iespējas.",
+    "p-gift": "Bērnu dāvanu kastes",
+    "p-gift-text": "Veidojot šo e-komercijas vietni, bija jāpatur prātā šie vārdi - “maigs, tīrs un vienkāršs”. Kopējai estētikai bija jābūt neitrālai, taču spilgtai, lai potenciālais klients izrādītu interesi par produktu iegādi.",
+    "p-wood": "Koka mājas pēc pasūtījuma",
+    "p-wood-text": "Klients vēlējās ļoti vienkāršu, daudzvalodu, informatīvu vietni. Lai gan projekts tika sasteigts, galaprodukts nodrošināja viegli orientējamu tīmekļa lapu ar nozarei unikālu dizainu.",
+    "p-car": "Auto noma un serviss",
+    "p-car-text": "Platforma, kas lietotājiem ļauj izpētīt šī uzņēmuma sniegto pakalpojumu klāstu, kā arī rezervēt konkrētu nomas maksu. Tikmēr no administratora viedokļa vietne ļauj pievienot, rediģēt, dzēst automašīnas, pārvaldīt rezervētās automašīnas un daudz ko citu.",
+
+    "c-sub-title": "Kontakti",
+    "c-title": "Sazināties",
+    "c-text": "Pieprasiet savu personalizēto vietni vai sadarbības piedāvājumu.",
+    "c-email": "E-pasts",
+    "c-area": "Kā es varu palīdzēt?",
+    "c-button": "Iesniegt formu",
+
+    "f-copyright": "Autortiesības 2023 © Visas tiesības aizsargātas",
+    "f-designed": "Projektēja un izstrādāja",
+    "f-designed-name": "Simons Meldzers"
+  }
