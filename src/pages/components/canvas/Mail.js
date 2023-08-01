@@ -10,13 +10,13 @@ const mail = useLoader(GLTFLoader, "/mail/scene.gltf");
     <mesh>
         <hemisphereLight 
             intensity={0.5}
-            groundColor="black"
+            groundColor="white"
         />
         <pointLight
             intensity={1}
         />
         <spotLight 
-            position={[0, 20, 40]}
+            position={[0, 10, 10]}
             angle={40}
             penumbra={1}
             castShadow
@@ -68,7 +68,7 @@ export default function MailCanvas() {
             <Suspense fallback={"Loading..."}>
                 <OrbitControls 
                     autoRotate
-                    autoRotateSpeed={0.35}
+                    autoRotateSpeed={0.5}
                     enableZoom={false}
                     enableRotate
                 />
