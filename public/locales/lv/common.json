@@ -27,6 +27,8 @@
     "c-email": "E-pasts",
     "c-area": "Kā es varu palīdzēt?",
     "c-button": "Iesniegt formu",
+    "c-success" : "Jūsu ziņojums tika nosūtīts!",
+    "c-error" : "Kaut kas nogāja greizi! Lūdzu, mēģiniet vēlreiz vēlāk!",
 
     "f-copyright": "Autortiesības 2023 © Visas tiesības aizsargātas",
     "f-designed": "Projektēja un izstrādāja",

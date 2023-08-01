@@ -51,7 +51,7 @@ function Contacts() {
             }
             sx={{ mb: 2 }}
           >
-            Your message has been sent! 🎉
+             {t("c-success")}🎉
           </Alert>
         </Fade>
       </Collapse>
@@ -80,7 +80,7 @@ function Contacts() {
             }
             sx={{ mb: 2 }}
           >
-            Something went wrong! 😕 Please try again later!
+            {t("c-error")}😕
           </Alert>
         </Fade>
       </Collapse>

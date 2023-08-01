@@ -27,6 +27,8 @@
     "c-email" : "Email",
     "c-area" : "How can I help?",
     "c-button" : "Submit form",
+    "c-success" : "Your message has been sent!",
+    "c-error" : "Something went wrong! Please try again later!",
 
     "f-copyright" : "Copyright 2023 © All rights reserved",
     "f-designed" : "Designed and developed by",
