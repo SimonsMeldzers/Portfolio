@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+
 import { Typography } from '@mui/material';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+
 function About() {
+    const { t } = useTranslation()
     const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -27,23 +32,30 @@ function About() {
             </div>
             <div className="a-text-container">
                 <Typography onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="a-sub-title" component='a' href="#about">
-                     About me
+                     {t("a-sub-title")}
                      <span style={isHovered ? {display: "flex", marginLeft: "5px"} : {display: "none"}}>#</span>
                 </Typography>
-                <Typography className='a-title' variant='h3' component='h2'> Web development </Typography>
+                <Typography className='a-title' variant='h3' component='h2'> {t("a-title")} </Typography>
                 <Typography className='a-text'> 
-                    I’m a full time CS student at Riga Technical University 
-                    who loves web development and design. Over the years I have built up a tech 
-                    stack consisting of - React, NextJs, ThreeJs, HTML, JS, CSS, Firebase, Sanity, MySQL, Stripe, MUI, 
-                    Bootstrap, and more. I make and design clean and user friendly websites that provide smooth 
-                    user experience, by utilizing latest technologies, to make sure your website stands out from 
-                    the competition. 
+                {t("a-text")}
                 </Typography>
             </div>
         </div>
     </div>
   )
 };
+
+export async function getStaticProps(context) {
+    // extract the locale identifier from the URL
+    const { locale } = context
+  
+    return {
+      props: {
+        // pass the translation props to the page component
+        ...(await serverSideTranslations(locale)),
+      },
+    }
+  };
 
 export default About;
 
