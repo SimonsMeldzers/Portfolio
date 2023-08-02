@@ -21,8 +21,8 @@ import { useTranslation } from "next-i18next";
 function Contacts() {
   const { t } = useTranslation();
 
-  const [showPopUp, setShowPopUp] = useState(true);
-  const [showPopUpError, setShowPopUpError] = useState(true);
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [showPopUpError, setShowPopUpError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [fromName, setFromName] = useState("");
   const [message, setMessage] = useState("");
