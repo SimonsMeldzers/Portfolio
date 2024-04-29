@@ -64,7 +64,7 @@ export default function Projects() {
             <ProjectsItem 
                 title={t("p-gift")}
                 text={t("p-gift-text")}
-                link="https://baby-box.netlify.app/"
+                link="https://www.louflowers.at/"
                 skills={
                     [
                         nextLogo,
